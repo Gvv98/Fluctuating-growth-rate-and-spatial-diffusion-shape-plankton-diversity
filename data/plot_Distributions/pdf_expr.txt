@@ -1,0 +1,15 @@
+# GIG
+def logSAD(n, b, c, mu):
+    n = np.maximum(n, 1e-12)
+    kv_val = sp.special.kv(1 - 2*mu, 2*np.sqrt(b/c))
+    if kv_val <= 0 or not np.isfinite(kv_val):
+        return -np.inf * np.ones_like(n)
+    return ((0.5 - mu)*np.log(b*c) - b/n - n/c - (2.0 - 2.0*mu)*np.log(n) - np.log(2) - np.log(kv_val))
+
+
+# Lognormal
+def logLognorm(n, mu, sigma):
+    n = np.maximum(n, 1e-12)
+    return -np.log(n * sigma * np.sqrt(2 * np.pi)) - ((np.log(n) - mu)**2) / (2 * sigma**2)
+
+
