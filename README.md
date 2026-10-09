@@ -1,4 +1,5 @@
-# MacroecologyMarine
+# Fluctuating growth rate and spatial diffusion shape plankton diversity
+
 
 Workspace for marine macroecology analyses.
 
