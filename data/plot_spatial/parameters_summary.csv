@@ -1,0 +1,5 @@
+Panel,Type,Gamma_km,Other_Param,Scale
+a_main,Species_Correlation,691.5147,192854.12393721577, 59.86784511744581
+a_inset,Species_Correlation,691.5147,,
+c_main,Chl_Correlation,9.875573553258393,0.02200396988612025,
+c_inset,Chl_Correlation,6.922820850722814,,
